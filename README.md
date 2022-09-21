@@ -1,5 +1,5 @@
 ## CS 2040 - Algorithms I
-**Assignment #1: ** Heuristics and the Knight’s Tour
+**Assignment #1:** Heuristics and the Knight’s Tour
 **Author:** Matt W. Martin
 
 ### About
@@ -72,7 +72,7 @@ After the heuristic completes, the value of each square on the chessboard as a s
 ( 0, 2)  'C1' : 001
 ( 0, 3)  'D1' : 006
 ( 0, 4)  'E1' : 019
-# ,,,
+# ...
 ( 4, 0)  'A5' : 023
 ( 4, 1)  'B5' : 016
 ( 4, 2)  'C5' : 009
