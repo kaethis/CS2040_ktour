@@ -41,7 +41,7 @@ Program execution instructions can be found by entering `python3 driver.py --hel
 ```
 usage: driver.py [-h] [--size N] [--start P] [--seed SEED]
 
-This PROGRAM implements Warnsdorff's heuristic for attempting to solve the knight's tour problem
+This PROGRAM implements Warnsdorff's heuristic for attempting to solve the knight's tour problem.
 
 options:
   -h, --help   show this help message and exit
@@ -73,7 +73,7 @@ After the heuristic completes, the value of each square on the chessboard as a s
 ( 0, 2)  'C1' : 001
 ( 0, 3)  'D1' : 006
 ( 0, 4)  'E1' : 019
-# ...
+             ...
 ( 4, 0)  'A5' : 023
 ( 4, 1)  'B5' : 016
 ( 4, 2)  'C5' : 009
@@ -89,7 +89,7 @@ Lastly, each move performed by the knight piece (in ascending order of the numbe
 003 :  'A2' -> 'B4'
 004 :  'B4' -> 'D5'
 005 :  'D5' -> 'E3'
-# ...
+            ...
 021 :  'D3' -> 'E5'
 022 :  'E5' -> 'C4'
 023 :  'C4' -> 'A5'
@@ -101,14 +101,9 @@ Lastly, each move performed by the knight piece (in ascending order of the numbe
 ### Links
 Here are some resources I found useful when developing this program:
 
-- [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/)
- - With few exceptions, I did my best to adhere to the strict coding style conventions described here.
-- [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/)
- - While it may not be necessary for this program, I strongly suggest becoming familar with Python virtual environments.
-- [Pros and Cons of Type Hints](https://realpython.com/lessons/pros-and-cons-type-hints/)
- - I am often in favour of static typing (mostly for the sake of readability and easier debugging), but it is important to understand the consequences of type hints before adopting these practices.
-- [Type Checking With Mypy](https://realpython.com/lessons/type-checking-mypy/)
- - Type checking can be performed with a handy application called mypy (http://mypy-lang.org/).
-- [Solution: Convert column index into corresponding column letter](https://stackoverflow.com/a/21231012/)
- - This solution was instrumental in my implementation for computing any column letter from a corresponding index number (and vice versa).
+- [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/) With few exceptions, I did my best to adhere to the strict coding style conventions described here.
+- [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/) While it may not be necessary for this program, I strongly suggest becoming familar with Python virtual environments.
+- [Pros and Cons of Type Hints](https://realpython.com/lessons/pros-and-cons-type-hints/) I am often in favour of static typing (mostly for the sake of readability and easier debugging), but it is important to understand the consequences of type hints before adopting these practices.
+- [Type Checking With Mypy](https://realpython.com/lessons/type-checking-mypy/) Type checking can be performed with a handy application called mypy (http://mypy-lang.org/).
+- [Solution: Convert column index into corresponding column letter](https://stackoverflow.com/a/21231012/) This solution was instrumental in my implementation for computing any column letter from a corresponding index number (and vice versa).
 - [Curses Programming with Python](https://docs.python.org/3/howto/curses.html/)
