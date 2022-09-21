@@ -1,5 +1,6 @@
 ## CS 2040 - Algorithms I
 **Assignment #1:** Heuristics and the Knight’s Tour
+
 **Author:** Matt W. Martin
 
 ### About
