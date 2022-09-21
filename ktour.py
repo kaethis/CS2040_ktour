@@ -2,7 +2,8 @@
 
 
 # -----------------------------------------------------------------------------
-""" This MODULE ...
+""" This MODULE contains the data structures and implementation for attempting
+    to solve the knight's tour problem using Warnsdorff's heuristic method.
 """ # -------------------------------------------------------------------------
 
 __author__ = '@kaethis'
@@ -34,8 +35,8 @@ class PositionTraversedError(Exception): # ------------------------------------
 
     def __init__(self, pos: str, val: int): # ---------------------------------
 
-        super().__init__(
-            "position already traversed: '{0}': {1:03d}".format(pos, val)
+        super().__init__(\
+            "position already traversed: '{0}': {1:03d}".format(pos, val)\
         )
         
 
@@ -169,7 +170,12 @@ class Chessboard: # -----------------------------------------------------------
         row, col = getRowColumn(pos)
 
         print("({0},{1}) '{2}' : {3:03d}"\
-            .format(row, col, pos, self.squares[row][col])\
+            .format(\
+                str(row).rjust(2),\
+                str(col).rjust(2),\
+                ('\''+pos+'\'').rjust(5),\
+                self.squares[row][col]\
+            )
         )
        
 
@@ -183,8 +189,13 @@ class Chessboard: # -----------------------------------------------------------
 
                 pos = getAlgebraicNotation(i, j)
 
-                print("({0},{1}) '{2}' : {3:03d}"\
-                    .format(i, j, pos, self.squares[i][j])\
+                print("({0},{1}) {2} : {3:03d}"\
+                    .format(\
+                        str(i).rjust(2),\
+                        str(j).rjust(2),\
+                        ('\''+pos+'\'').rjust(5),\
+                        self.squares[i][j]\
+                    )
                 )
 
 
@@ -346,7 +357,13 @@ class Knight: # ---------------------------------------------------------------
         if move is None: move = self.moves[move_i]
 
 
-        print("{0:03d} : '{1}' -> '{2}'".format(move_i, move[0], move[1]))
+        print("{0:03d} : {1} -> {2}"
+            .format(\
+                move_i,\
+                ('\''+move[0]+'\'').rjust(5),\
+                ('\''+move[1]+'\'').ljust(5)\
+            )\
+        )
 
 
     def printMoves(self): # ---------------------------------------------------
@@ -412,9 +429,15 @@ def getRowColumn(pos: str) -> Tuple[int, int]: # ------------------------------
         chessboard (of any size).
     """ # ---------------------------------------------------------------------
 
-    result = re.search(r'(^[a-zA-Z]+)(\d+)', pos)
+    try:
+        
+        result = re.search(r'(^[a-zA-Z]+)(\d+)', pos)
     
-    assert result is not None
+        assert result is not None
+
+    except AssertionError:
+
+        raise ValueError 
 
 
     row, col = result.group(2), result.group(1)
