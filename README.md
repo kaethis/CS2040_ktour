@@ -51,9 +51,9 @@ options:
 
 ~created by @kaethis
 ```
-The size of the square chessboard (8 × 8 by default) can be specified using the `--size N` option (min: 5, max: 30).  Current system time is used as the seed for pseudo-random number generation if no seed number is provided with `--seed SEED`.  A pseudo-random position on the chessboard is chosen unless the starting position of the knight is specified (in algebraic notation) by `--start P`.
+The size of the square chessboard (8 × 8 by default) can be specified using the `--size N` option (min: 5, max: 30).  Current system time is used as the seed for pseudo-random number generation if no seed number is provided with `--seed SEED`.  A pseudo-random position on the chessboard is chosen unless the starting position of the knight is specified (in algebraic notation) with `--start P`.
 
-For example, the program can execute with the knight positioned in the 2nd row of the 4th column on a 5 × 5 chessboard with a seed number of 920 by entering `python3 driver.py --size 5 --start c1 --seed 920`.
+For example, the program can execute with the knight positioned in the 1st row of the 3rd column (or "C1" in algebraic notation) on a 5 × 5 chessboard with seed number 920 by entering `python3 driver.py --size 5 --start c1 --seed 920`.
 
 Of course, the program can also execute with default parameters by entering `python3 driver.py`.
 
