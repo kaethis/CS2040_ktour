@@ -105,5 +105,5 @@ Here are some resources I found useful when developing this program:
 - [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/) While it may not be necessary for this program, I strongly suggest becoming familar with Python virtual environments.
 - [Pros and Cons of Type Hints](https://realpython.com/lessons/pros-and-cons-type-hints/) I am often in favour of static typing (mostly for the sake of readability and easier debugging), but it is important to understand the consequences of type hints before adopting these practices.
 - [Type Checking With Mypy](https://realpython.com/lessons/type-checking-mypy/) Type checking can be performed with a handy application called mypy (http://mypy-lang.org/).
-- [Solution: Convert column index into corresponding column letter](https://stackoverflow.com/a/21231012/) This solution was instrumental in my implementation for computing any column letter from a corresponding index number (and vice versa).
+- [Solution: Convert column index into corresponding column letter](https://stackoverflow.com/a/21231012/) This solution was instrumental in understanding how to compute any column letter from a corresponding index number (and vice versa).
 - [Curses Programming with Python](https://docs.python.org/3/howto/curses.html/)
